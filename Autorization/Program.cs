@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+// Добавление токенов
+//builder.Services.AddAuthentication("Bearer")  // схема аутентификации - с помощью jwt-токенов
+//    .AddJwtBearer();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
